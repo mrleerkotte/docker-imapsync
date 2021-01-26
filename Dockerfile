@@ -19,7 +19,7 @@ RUN set -ex \
         libregexp-common-perl libsys-meminfo-perl libterm-readkey-perl \
         libtest-mockobject-perl libtest-pod-perl libunicode-string-perl \
         liburi-perl libwww-perl libtest-nowarnings-perl libtest-deep-perl \
-        libtest-warn-perl make cpanminus curl \
+        libtest-warn-perl make cpanminus curl procps \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd -r build -g $IMAPSYNC_GID \
     && useradd --no-log-init -m -r -u $IMAPSYNC_UID -g $IMAPSYNC_GID imapsync \
